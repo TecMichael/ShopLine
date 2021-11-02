@@ -1,3 +1,4 @@
+import 'package:book_app/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -25,23 +26,9 @@ class FormError extends StatelessWidget {
       children: [
         SvgPicture.asset(
           'assets/icons/Error.svg',
-          height: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(14),
-          width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(14),
-        ),
+          height: getProportionateScreenWidth(14)   ),
         SizedBox(
-          width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(10),
+          width: getProportionateScreenWidth(10),
         ),
         Text(error)
       ],

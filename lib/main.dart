@@ -1,4 +1,3 @@
-import 'package:book_app/body/home_form.dart';
 // import 'package:book_app/constants.dart';
 import 'package:book_app/routs.dart';
 // import 'package:book_app/components/splash_screen.dart';
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: theme(),
-      home: HomeForm(),
+      // home: HomeForm(),
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );

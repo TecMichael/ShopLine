@@ -5,7 +5,7 @@ import 'package:book_app/size_config.dart';
 import 'package:flutter/material.dart';
 
 class form extends StatelessWidget {
-  const form(GlobalKey<FormState> key, {Key }) : super(key: key);
+  const form(GlobalKey<FormState> key, {Key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +20,11 @@ class form extends StatelessWidget {
         Text(
           'Login Success',
           style: TextStyle(
-              fontSize: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(30),
+              fontSize: getProportionateScreenWidth(30),
               fontWeight: FontWeight.bold,
               color: Colors.black),
         ),
-       Spacer(),
+        Spacer(),
         SizedBox(
           width: SizeConfig.screenWidth * 0.6,
           child: DefaultButton(

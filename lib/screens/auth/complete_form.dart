@@ -19,11 +19,7 @@ class CompleteForm extends StatelessWidget {
       width: double.infinity,
       child: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+          horizontal: getProportionateScreenWidth(20),
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -40,9 +36,7 @@ class CompleteForm extends StatelessWidget {
                 height: SizeConfig.screenHeight * 0.05,
               ),
               ComplereProfileForm(),
-              SizedBox(
-                height: getProportionateScreenHeight(30),
-              ),
+              SizedBox(height: getProportionateScreenHeight(30)),
               Text(
                 'By continuing your confirm that you gave \nwith our Term and Condition',
                 textAlign: TextAlign.center,
@@ -154,21 +148,9 @@ class _ComplereProfileFormState extends State<ComplereProfileForm> {
         suffixIcon: Padding(
           padding: EdgeInsets.fromLTRB(
             0,
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
           ),
           child: SvgPicture.asset('assets/icons/Location point.svg'),
         ),
@@ -211,21 +193,9 @@ class _ComplereProfileFormState extends State<ComplereProfileForm> {
         suffixIcon: Padding(
           padding: EdgeInsets.fromLTRB(
             0,
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
           ),
           child: SvgPicture.asset('assets/icons/Phone.svg'),
         ),
@@ -266,21 +236,9 @@ class _ComplereProfileFormState extends State<ComplereProfileForm> {
         suffixIcon: Padding(
           padding: EdgeInsets.fromLTRB(
             0,
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
           ),
           child: SvgPicture.asset('assets/icons/User.svg'),
         ),
@@ -322,21 +280,9 @@ class _ComplereProfileFormState extends State<ComplereProfileForm> {
         suffixIcon: Padding(
           padding: EdgeInsets.fromLTRB(
             0,
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
-            (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
+            getProportionateScreenWidth(20),
           ),
           child: SvgPicture.asset('assets/icons/User.svg'),
         ),

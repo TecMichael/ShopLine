@@ -26,13 +26,14 @@ class BodyAuth extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: (double inputWidth) {
-              // double screenWidth = SizeConfig.screenWidth;
-              // 375 is the layout width that designer use
-              // return (inputWidth / 375.0) * screenWidth;
-            }(20),
-          ),
+          padding:
+              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)
+                  // horizontal: (double inputWidth) {
+                  //   // double screenWidth = SizeConfig.screenWidth;
+                  //   // 375 is the layout width that designer use
+                  //   // return (inputWidth / 375.0) * screenWidth;
+                  // }(20),
+                  ),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -43,11 +44,7 @@ class BodyAuth extends StatelessWidget {
                   'Welcome Back',
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: (double inputWidth) {
-                        // double screenWidth = SizeConfig.screenWidth;
-                        // 375 is the layout width that designer use
-                        // return (inputWidth / 375.0) * screenWidth;
-                      }(28),
+                      fontSize: getProportionateScreenWidth(28),
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
@@ -75,7 +72,7 @@ class BodyAuth extends StatelessWidget {
                     SociallCard(
                       icon: 'assets/icons/twitter.svg',
                       press: () {},
-                    )
+                    ),
                   ],
                 ),
                 SizedBox(

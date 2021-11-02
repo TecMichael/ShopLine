@@ -1,14 +1,9 @@
-// import 'dart:html';
 
 import 'package:book_app/component/components/default_button.dart';
 import 'package:book_app/component/components/splash_content.dart';
-// import 'package:book_app/components/default_button.dart';
-// import 'package:book_app/components/splash_content.dart';
 import 'package:book_app/constants.dart';
 import 'package:book_app/screens/auth/sign_in_screen.dart';
 import 'package:book_app/size_config.dart';
-// import 'package:book_app/constants.dart';
-// import 'package:book_app/size_config.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatefulWidget {
@@ -61,11 +56,7 @@ class _BodyState extends State<Body> {
             flex: 2,
             child: Padding(
               padding: EdgeInsets.symmetric(
-                horizontal: (double inputWidth) {
-                  // double screenWidth = SizeConfig.screenWidth;
-                  // 375 is the layout width that designer use
-                  // return (inputWidth / 375.0) * screenWidth;
-                }(20),
+                horizontal: getProportionateScreenWidth(20),
               ),
               child: Column(
                 children: <Widget>[
