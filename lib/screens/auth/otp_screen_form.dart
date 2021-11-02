@@ -1,4 +1,5 @@
-import 'package:book_app/components/default_button.dart';
+// import 'package:book_app/components/default_button.dart';
+import 'package:book_app/component/components/default_button.dart';
 import 'package:book_app/constants.dart';
 import 'package:book_app/size_config.dart';
 import 'package:flutter/material.dart';
@@ -13,10 +14,10 @@ class OtpForm extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+            // double screenWidth = SizeConfig.screenWidth;
+            // 375 is the layout width that designer use
+            // return (inputWidth / 375.0) * screenWidth;
+          }(20),
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -106,10 +107,10 @@ class _OtFormState extends State<OtForm> {
             children: [
               SizedBox(
                 width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(60),
+                  // double screenWidth = SizeConfig.screenWidth;
+                  // 375 is the layout width that designer use
+                  // return (inputWidth / 375.0) * screenWidth;
+                }(60),
                 child: TextFormField(
                   autocorrect: true,
                   obscureText: true,
@@ -124,10 +125,10 @@ class _OtFormState extends State<OtForm> {
               ),
               SizedBox(
                 width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(60),
+                  // double screenWidth = SizeConfig.screenWidth;
+                  // 375 is the layout width that designer use
+                  // return (inputWidth / 375.0) * screenWidth;
+                }(60),
                 child: TextFormField(
                   focusNode: pin2focusNode,
                   obscureText: true,
@@ -142,10 +143,10 @@ class _OtFormState extends State<OtForm> {
               ),
               SizedBox(
                 width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(60),
+                  // double screenWidth = SizeConfig.screenWidth;
+                  // 375 is the layout width that designer use
+                  // return (inputWidth / 375.0) * screenWidth;
+                }(60),
                 child: TextFormField(
                   focusNode: pin3focusNode,
                   obscureText: true,
@@ -160,10 +161,10 @@ class _OtFormState extends State<OtForm> {
               ),
               SizedBox(
                 width: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(60),
+                  // double screenWidth = SizeConfig.screenWidth;
+                  // 375 is the layout width that designer use
+                  // return (inputWidth / 375.0) * screenWidth;
+                }(60),
                 child: TextFormField(
                   focusNode: pin4focusNode,
                   obscureText: true,

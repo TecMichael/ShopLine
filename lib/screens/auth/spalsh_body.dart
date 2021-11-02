@@ -1,7 +1,9 @@
 // import 'dart:html';
 
-import 'package:book_app/components/default_button.dart';
-import 'package:book_app/components/splash_content.dart';
+import 'package:book_app/component/components/default_button.dart';
+import 'package:book_app/component/components/splash_content.dart';
+// import 'package:book_app/components/default_button.dart';
+// import 'package:book_app/components/splash_content.dart';
 import 'package:book_app/constants.dart';
 import 'package:book_app/screens/auth/sign_in_screen.dart';
 import 'package:book_app/size_config.dart';
@@ -60,10 +62,10 @@ class _BodyState extends State<Body> {
             child: Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: (double inputWidth) {
-  // double screenWidth = SizeConfig.screenWidth;
-  // 375 is the layout width that designer use
-  // return (inputWidth / 375.0) * screenWidth;
-}(20),
+                  // double screenWidth = SizeConfig.screenWidth;
+                  // 375 is the layout width that designer use
+                  // return (inputWidth / 375.0) * screenWidth;
+                }(20),
               ),
               child: Column(
                 children: <Widget>[

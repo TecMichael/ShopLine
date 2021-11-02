@@ -1,9 +1,11 @@
 import 'package:book_app/body/home_form.dart';
-import 'package:book_app/constants.dart';
+// import 'package:book_app/constants.dart';
 import 'package:book_app/routs.dart';
-import 'package:book_app/components/splash_screen.dart';
+// import 'package:book_app/components/splash_screen.dart';
 import 'package:book_app/theme.dart';
 import 'package:flutter/material.dart';
+
+import 'component/components/splash_screen.dart';
 
 // import 'dart:js';
 void main() {
