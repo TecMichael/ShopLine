@@ -11,6 +11,9 @@ class HomeForm extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
+          SizedBox(
+            height: getProportionateScreenWidth(20),
+          ),
           Padding(
             padding: EdgeInsets.symmetric(
               horizontal: getProportionateScreenWidth(20),
@@ -39,17 +42,48 @@ class HomeForm extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.all(
-                    getProportionateScreenWidth(12),
+                InkWell(
+                  onTap: () {},
+                  borderRadius: BorderRadius.circular(50),
+                  child: Stack(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(
+                          getProportionateScreenWidth(12),
+                        ),
+                        height: getProportionateScreenWidth(46),
+                        width: getProportionateScreenHeight(46),
+                        decoration: BoxDecoration(
+                          color: kSecondaryColor.withOpacity(0.1),
+                          shape: BoxShape.circle,
+                        ),
+                        child: SvgPicture.asset('assets/icons/Bell.svg'),
+                      ),
+                      Positioned(
+                        right: 0,
+                        top: -3,
+                        child: Container(
+                          height: getProportionateScreenWidth(16),
+                          width: getProportionateScreenHeight(16),
+                          decoration: BoxDecoration(
+                            color: Color(0xffff4848),
+                            shape: BoxShape.circle,
+                            border: Border.all(width: 1.5, color: Colors.white),
+                          ),
+                          child: Center(
+                            child: Text(
+                              '3',
+                              style: TextStyle(
+                                  fontSize: getProportionateScreenWidth(10),
+                                  height: 1,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
                   ),
-                  height: getProportionateScreenWidth(46),
-                  width: getProportionateScreenHeight(46),
-                  decoration: BoxDecoration(
-                    color: kSecondaryColor.withOpacity(0.1),
-                    shape: BoxShape.circle,
-                  ),
-                  child: SvgPicture.asset('assets/icons/Bell.svg'),
                 )
               ],
             ),

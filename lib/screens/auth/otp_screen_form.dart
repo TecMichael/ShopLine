@@ -12,7 +12,11 @@ class OtpForm extends StatelessWidget {
       width: double.infinity,
       child: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: getProportionateScreenWidth(20),
+          horizontal: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -101,7 +105,11 @@ class _OtFormState extends State<OtForm> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(60),
                 child: TextFormField(
                   autocorrect: true,
                   obscureText: true,
@@ -115,7 +123,11 @@ class _OtFormState extends State<OtForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(60),
                 child: TextFormField(
                   focusNode: pin2focusNode,
                   obscureText: true,
@@ -129,7 +141,11 @@ class _OtFormState extends State<OtForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(60),
                 child: TextFormField(
                   focusNode: pin3focusNode,
                   obscureText: true,
@@ -143,7 +159,11 @@ class _OtFormState extends State<OtForm> {
                 ),
               ),
               SizedBox(
-                width: getProportionateScreenWidth(60),
+                width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(60),
                 child: TextFormField(
                   focusNode: pin4focusNode,
                   obscureText: true,

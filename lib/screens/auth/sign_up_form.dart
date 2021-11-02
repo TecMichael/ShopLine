@@ -21,7 +21,11 @@ class SignUp extends StatelessWidget {
       width: double.infinity,
       child: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: getProportionateScreenWidth(20),
+          horizontal: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -161,9 +165,21 @@ class _SignUpFormState extends State<SignUpForm> {
           suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
             ),
             child: SvgPicture.asset('assets/icons/Lock.svg'),
           )
@@ -203,9 +219,21 @@ class _SignUpFormState extends State<SignUpForm> {
           suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
             ),
             child: SvgPicture.asset('assets/icons/Lock.svg'),
           )
@@ -245,9 +273,21 @@ class _SignUpFormState extends State<SignUpForm> {
           suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
-              getProportionateScreenWidth(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
+              (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
             ),
             child: SvgPicture.asset('assets/icons/Mail.svg'),
           )

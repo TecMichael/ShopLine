@@ -19,7 +19,11 @@ class form extends StatelessWidget {
         Text(
           'Login Success',
           style: TextStyle(
-              fontSize: getProportionateScreenWidth(30),
+              fontSize: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(30),
               fontWeight: FontWeight.bold,
               color: Colors.black),
         ),

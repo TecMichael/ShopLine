@@ -19,7 +19,11 @@ class SplashContent extends StatelessWidget {
         Text(
           'ShopLine',
           style: TextStyle(
-              fontSize: getProportionateScreenWidth(36),
+              fontSize: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(36),
               color: kPrimaryColor,
               fontWeight: FontWeight.bold),
         ),
@@ -31,7 +35,11 @@ class SplashContent extends StatelessWidget {
         Image.asset(
           image,
           height: getProportionateScreenHeight(265),
-          width: getProportionateScreenWidth(235),
+          width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(235),
         )
       ],
     );

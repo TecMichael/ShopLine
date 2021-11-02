@@ -59,7 +59,11 @@ class _BodyState extends State<Body> {
             flex: 2,
             child: Padding(
               padding: EdgeInsets.symmetric(
-                horizontal: getProportionateScreenWidth(20),
+                horizontal: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
               ),
               child: Column(
                 children: <Widget>[

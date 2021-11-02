@@ -18,7 +18,11 @@ class NoAcoountText extends StatelessWidget {
       children: [
         Text(
           'Dont have an account?',
-          style: TextStyle(fontSize: getProportionateScreenWidth(16)),
+          style: TextStyle(fontSize: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(16)),
         ),
         GestureDetector(
           onTap: () {
@@ -27,7 +31,11 @@ class NoAcoountText extends StatelessWidget {
           child: Text(
             'Sign up',
             style: TextStyle(
-                fontSize: getProportionateScreenWidth(16),
+                fontSize: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(16),
                 color: kPrimaryColor),
           ),
         )

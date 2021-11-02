@@ -27,7 +27,11 @@ class BodyAuth extends StatelessWidget {
         width: double.infinity,
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: getProportionateScreenWidth(20),
+            horizontal: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(20),
           ),
           child: SingleChildScrollView(
             child: Column(
@@ -39,7 +43,11 @@ class BodyAuth extends StatelessWidget {
                   'Welcome Back',
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: getProportionateScreenWidth(28),
+                      fontSize: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(28),
                       fontWeight: FontWeight.bold),
                 ),
                 Text(

@@ -18,13 +18,25 @@ class SociallCard extends StatelessWidget {
       onTap: press,
       child: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: getProportionateScreenWidth(12),
+          horizontal: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(12),
         ),
         padding: EdgeInsets.all(
-          getProportionateScreenWidth(12),
+          (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(12),
         ),
         height: getProportionateScreenHeight(40),
-        width: getProportionateScreenWidth(40),
+        width: (double inputWidth) {
+  // double screenWidth = SizeConfig.screenWidth;
+  // 375 is the layout width that designer use
+  // return (inputWidth / 375.0) * screenWidth;
+}(40),
         decoration:
             BoxDecoration(color: Color(0xfff5f6f9), shape: BoxShape.circle),
         child: SvgPicture.asset(icon),
