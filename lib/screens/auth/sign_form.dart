@@ -44,9 +44,11 @@ class _SignFormState extends State<SignForm> {
                 value: remember,
                 activeColor: kPrimaryColor,
                 onChanged: (value) {
-                  setState(() {
-                    remember = value;
-                  });
+                  setState(
+                    () {
+                      remember = value;
+                    },
+                  );
                 },
               ),
               Text('Remember me'),
