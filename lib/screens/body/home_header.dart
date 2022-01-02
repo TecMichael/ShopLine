@@ -1,5 +1,6 @@
 import 'package:book_app/component/components/icon_btn.dart';
 import 'package:book_app/component/components/search_field.dart';
+import 'package:book_app/screens/cart/cart_creen.dart';
 import 'package:flutter/material.dart';
 
 import '../../size_config.dart';
@@ -23,7 +24,7 @@ class HomeHeader extends StatelessWidget {
           SearchField(),
           IconBtnWithCounter(
             svgSrc: 'assets/icons/Cart Icon.svg',
-            press: () {},
+            press: () => Navigator.pushNamed(context, CartScreen.routeName),
             numOfItems: 3,
           ),
           IconBtnWithCounter(
