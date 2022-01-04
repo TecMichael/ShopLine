@@ -1,3 +1,4 @@
+import 'package:book_app/models/Cart.dart';
 import 'package:book_app/screens/auth/forgot_form.dart';
 import 'package:book_app/screens/auth/spalsh_body.dart';
 import 'package:book_app/screens/cart/components/body.dart';
@@ -10,21 +11,25 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          children: [
-            Text(
-              'Your Cart',
-              style: TextStyle(color: Colors.black),
-            ),
-            Text(
-              '4 items',
-              style: Theme.of(context).textTheme.caption,
-            )
-          ],
-        ),
-      ),
+      appBar: buildAppBar(context),
       body: CartBody()
+    );
+  }
+
+  AppBar buildAppBar(BuildContext context) {
+    return AppBar(
+      title: Column(
+        children: [
+          Text(
+            'Your Cart',
+            style: TextStyle(color: Colors.black),
+          ),
+          Text(
+            '${demoCarts.length}items',
+            style: Theme.of(context).textTheme.caption,
+          )
+        ],
+      ),
     );
   }
 }
